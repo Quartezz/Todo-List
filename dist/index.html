@@ -23,7 +23,8 @@
     <main class="main">
         <nav class="sidebar">
             <div class="default-container">
-                <button class="btn-default" id="btn-today">
+                <h2>Calendar</h2>
+                <button class="btn-default active" id="btn-today">
                     <img src="./Images/today.svg" alt="today">
                     <p>Today</p>
                 </button>
@@ -38,13 +39,21 @@
             </div>
             <h2>Projects</h2>
             <div class="projects-container" id="projects-container"></div>
-            <button class="btn-project-add">
+            <button class="btn-project-add btn-default">
                 <img src="./Images/plus.svg" alt="add">
                 <p>Add Project</p>
             </button>
             <div class="project-popup"></div>
-
         </nav>
+        <div class="task-container" id="task-container">
+            <h2 id="project-name">Today</h2>
+            <div class="tasks-list" id="tasks-list"></div>
+            <button class="btn-add-task" id="btn-add-task">
+                <img src="./Images/plus.svg" alt="add">
+                <p>Add Project</p>
+            </button>
+            <div class="task-popup" id="task-popup"></div>
+        </div>
     </main>
     <footer class="footer">
         <p>
