@@ -10,6 +10,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 .header {
@@ -51,4 +52,88 @@ body {
     color: var(--font-color);
 }
 
+.main {
+    display: flex;
+    min-height: 100vh;
+}
 
+.sidebar {
+    width: 200px;
+    min-width: 200px;
+    padding: 20px;
+    background-color: var(--blue);
+}
+
+.sidebar img {
+    max-width: 30px;
+    filter: invert(1);
+}
+
+.btn-default {
+    background-color: var(--blue);
+}
+
+button {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+button,
+input {
+    border: none;
+    color: inherit;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.btn-default p {
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.btn-default:hover,
+.btn-default.active {
+    background-color: var(--blue-light);
+}
+.sidebar h2 {
+    color: var(--font-color);
+    text-align: left;
+}
+
+.task-container {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--blue-maxlight);
+}
+
+.task-container h2 {
+    padding: 20px;
+    margin-bottom: 10px;
+    color: var(--blue);
+}
+
+.btn-add-task img{
+    max-width: 30px;
+    filter: invert(29%) sepia(99%) saturate(308%) hue-rotate(175deg) brightness(92%) contrast(91%);
+}
+
+.btn-add-task {
+    background-color: var(--blue-maxlight);
+    width: fit-content;
+    padding: 20px;
+}
+
+.btn-add-task p {
+    color: var(--blue);
+}
+
+.btn-add-task:hover {
+    background-color: var(--blue-light);
+}
