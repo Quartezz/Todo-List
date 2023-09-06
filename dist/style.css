@@ -107,6 +107,13 @@ input {
     text-align: left;
 }
 
+.project-popup {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
 .task-container {
     width: 100%;
     padding: 1rem;
@@ -136,4 +143,11 @@ input {
 
 .btn-add-task:hover {
     background-color: var(--blue-light);
+}
+
+.task-popup {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
 }
