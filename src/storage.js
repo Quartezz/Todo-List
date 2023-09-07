@@ -78,12 +78,6 @@ class Storage {
     Storage.saveTodoList(todoList);
   }
 
-  static updateMonthProject() {
-    const todoList = Storage.getTodoList();
-    todoList.updateMonthProject();
-    Storage.saveTodoList(todoList);
-  }
-
 }
 
 export default Storage;
