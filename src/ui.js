@@ -47,8 +47,8 @@ export default class UI {
     if (projectName !== 'Today' && projectName !== 'This week') {
       projectPreview.innerHTML += `
         <button class="button-add-task" id="button-add-task">
-          <i class="fas fa-plus"></i>
-          Add Task
+        <img src="./Images/plus.svg" alt="add">
+        <p>Add Task</p>
         </button>
         <div class="add-task-popup" id="add-task-popup">
           <input
