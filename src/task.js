@@ -27,3 +27,5 @@ class Task {
         return `${month}/${day}/${year}`;
     }
 }
+
+export default Task;
