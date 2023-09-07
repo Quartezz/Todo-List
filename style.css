@@ -52,6 +52,9 @@ body {
     color: var(--font-color);
 }
 
+i {
+    margin-right: 1rem;
+}
 .main {
     display: flex;
     min-height: 100vh;
@@ -122,13 +125,52 @@ input {
     text-align: center;
 }
 
+.add-project-popup.active {
+    display: block;
+}
+
+.input-add-project-popup {
+    border: 1px solid var(--blue-dark);
+    margin-bottom: 10px;
+    width: 175px;
+}
+
+.add-project-popup-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.button-add-project-popup {
+    border: 1px solid var(--blue-dark);
+    background-color: var(--blue-light);
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+.button-cancel-project-popup {
+    border: 1px solid var(--blue-dark);
+    background-color: var(--blue-dark);
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+.button-add-project-popup:hover {
+    background-color: #2f6ea5;
+}
+
+.button-cancel-project-popup:hover {
+    background-color: #2f6ea5;
+}
+
 .project-preview {
     width: 100%;
     padding: 1rem;
     background-color: var(--blue-maxlight);
 }
 
-.project-preview h2 {
+.project-preview h1 {
     padding: 20px;
     margin-bottom: 10px;
     color: var(--blue);
