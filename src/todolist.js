@@ -5,9 +5,9 @@ import { compareAsc, toDate } from "date-fns";
 class TodoList {
     constructor() {
         this.projects = [];
+        this.projects.push(new Project("Inbox"));
         this.projects.push(new Project("Today"));
-        this.projects.push(new Project("Week"));
-        this.projects.push(new Project("Month"));
+        this.projects.push(new Project("This week"));
     }
 
     setProjects(projects) {
@@ -42,7 +42,7 @@ class TodoList {
         this.getProject('Today').tasks = [];
     
         this.projects.forEach((project) => {
-          if (project.getName() === 'Today' || project.getName() === 'Week')
+          if (project.getName() === 'Today' || project.getName() === 'This week')
             return;
     
           const todayTasks = project.getTasksToday();
@@ -54,21 +54,21 @@ class TodoList {
       }
     
     updateWeekProject() {
-        this.getProject('Week').tasks = [];
+        this.getProject('This week').tasks = [];
     
         this.projects.forEach((project) => {
-          if (project.getName() === 'Today' || project.getName() === 'Week')
+          if (project.getName() === 'Today' || project.getName() === 'This week')
             return;
     
           const weekTasks = project.getTasksThisWeek()
           weekTasks.forEach((task) => {
             const taskName = `${task.getName()} (${project.getName()})`
-            this.getProject('Week').addTask(new Task(taskName, task.getDate()));
+            this.getProject('This week').addTask(new Task(taskName, task.getDate()));
           })
         })
     
-        this.getProject('Week').setTasks(
-          this.getProject('Week')
+        this.getProject('This week').setTasks(
+          this.getProject('This week')
             .getTasks()
             .sort((taskA, taskB) =>
               compareAsc(
