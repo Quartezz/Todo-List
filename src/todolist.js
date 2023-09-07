@@ -76,7 +76,7 @@ class TodoList {
                 toDate(new Date(taskB.getDateFormatted()))
               )
             )
-        );
+        )
       }
 
       updateMonthProject() {

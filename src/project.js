@@ -14,6 +14,10 @@ class Project {
         return this.name;
     }
 
+    setTasks(tasks) {
+        this.tasks = tasks;
+    }
+
     getTasks() {
         return this.tasks;
     }

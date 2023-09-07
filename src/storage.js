@@ -1,16 +1,16 @@
-import Project from './Project'
-import Task from './Task'
-import TodoList from './TodoList'
+import Project from './project'
+import Task from './task'
+import TodoList from './todolist'
 
 class Storage {
   static saveTodoList(data) {
-    localStorage.setItem('todoList', JSON.stringify(data));
+    localStorage.setItem('todolist', JSON.stringify(data));
   }
 
   static getTodoList() {
     const todoList = Object.assign(
       new TodoList(),
-      JSON.parse(localStorage.getItem('todoList'))
+      JSON.parse(localStorage.getItem('todolist'))
     );
 
     todoList.setProjects(
@@ -25,7 +25,7 @@ class Storage {
         project.setTasks(
           project.getTasks().map((task) => Object.assign(new Task(), task))
         )
-      );
+      )
 
     return todoList;
   }
