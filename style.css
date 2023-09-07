@@ -19,19 +19,19 @@ body {
     background-color: var(--blue-dark);
 }
 
-.title {
+.logo {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 1rem;
 }
 
-.title img {
+.logo img {
     max-width: 5rem;
     filter: invert(1);
 }
 
-.title h1 {
+.logo h1 {
     color: white;
     font-size: 2rem;
 }
@@ -57,19 +57,19 @@ body {
     min-height: 100vh;
 }
 
-.sidebar {
+.nav {
     width: 200px;
     min-width: 200px;
     padding: 20px;
     background-color: var(--blue);
 }
 
-.sidebar img {
+.nav img {
     max-width: 30px;
     filter: invert(1);
 }
 
-.btn-default {
+.button-default-project {
     background-color: var(--blue);
 }
 
@@ -84,6 +84,14 @@ button {
     gap: 1rem;
 }
 
+.button-open-nav {
+    display: none;
+    width: 40px;
+    padding: 0;
+    background-color: var(--blue);
+    font-size: 40px;
+}
+
 button,
 input {
     border: none;
@@ -93,55 +101,55 @@ input {
     font-family: inherit;
 }
 
-.btn-default p {
+.button-default-project p {
     color: var(--font-color);
     font-weight: 600;
 }
 
-.btn-default:hover,
-.btn-default.active {
+.button-default-project:hover,
+.button-default-project.active {
     background-color: var(--blue-light);
 }
-.sidebar h2 {
+.nav h2 {
     color: var(--font-color);
     text-align: left;
 }
 
-.project-popup {
+.add-project-popup {
     display: none;
     width: 100%;
     padding: 10px;
     text-align: center;
 }
 
-.task-container {
+.project-preview {
     width: 100%;
     padding: 1rem;
     background-color: var(--blue-maxlight);
 }
 
-.task-container h2 {
+.project-preview h2 {
     padding: 20px;
     margin-bottom: 10px;
     color: var(--blue);
 }
 
-.btn-add-task img{
+.button-add-task img{
     max-width: 30px;
     filter: invert(29%) sepia(99%) saturate(308%) hue-rotate(175deg) brightness(92%) contrast(91%);
 }
 
-.btn-add-task {
+.button-add-task {
     background-color: var(--blue-maxlight);
     width: fit-content;
     padding: 20px;
 }
 
-.btn-add-task p {
+.button-add-task p {
     color: var(--blue);
 }
 
-.btn-add-task:hover {
+.button-add-task:hover {
     background-color: var(--blue-light);
 }
 
