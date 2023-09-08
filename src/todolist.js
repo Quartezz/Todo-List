@@ -27,7 +27,7 @@ class TodoList {
     }
 
     addProject(newProject) {
-        if (this.projects.fint((project) => project.name === newProject.name)) return;
+        if (this.projects.find((project) => project.name === newProject.name)) return;
         this.projects.push(newProject);
     }
 
