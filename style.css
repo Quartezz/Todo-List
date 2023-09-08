@@ -95,6 +95,14 @@ button {
     font-size: 40px;
 }
 
+.button-project {
+    color: var(--font-color);
+    background-color: var(--blue-dark);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
 button,
 input {
     border: none;
@@ -346,3 +354,6 @@ input {
     color: var(--blue);
 }
 
+.button-project .fa-times {
+    color: var(--font-color);
+}
